@@ -9,30 +9,30 @@
   <body>
     <div class="calculator">
       <div class="displayarea">
-        <div id="calculate">10*10</div>
+        <div id="expression">10*10</div>
         <div id="result">100</div>
       </div>
       <div class="buttonarea">
-            <button class="btn">&lt</button>
-            <button id ="all-clear-btn" class="btn">AC</button>
-            <button class="btn btn-operator">÷</button>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn btn-operator">x</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn btn-operator">-</button>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn btn-operator">+</button>
-            <button id = "zero-btn" class="btn">0</button>
-            <button class="btn">.</button>
-            <button class="btn btn-operator">=</button>
+            <button class="btn" onclick="eraseNumber()">&lt</button>
+            <button id ="all-clear-btn" class="btn" onclick="allClear()">AC</button>
+            <button class="btn btn-operator" onclick="getUserInput('÷')">÷</button>
+            <button class="btn" onclick="getUserInput('7')">7</button>
+            <button class="btn" onclick="getUserInput('8')">8</button>
+            <button class="btn" onclick="getUserInput('9')">9</button>
+            <button class="btn btn-operator" onclick="getUserInput('×')">×</button>
+            <button class="btn" onclick="getUserInput('4')">4</button>
+            <button class="btn" onclick="getUserInput('5')">5</button>
+            <button class="btn" onclick="getUserInput('6')">6</button>
+            <button class="btn btn-operator" onclick="getUserInput('-')">-</button>
+            <button class="btn" onclick="getUserInput('1')">1</button>
+            <button class="btn" onclick="getUserInput('2')">2</button>
+            <button class="btn" onclick="getUserInput('3')">3</button>
+            <button class="btn btn-operator" onclick="getUserInput('+')">+</button>
+            <button id = "zero-btn" class="btn" onclick="getUserInput('0')">0</button>
+            <button class="btn" onclick="getUserInput('.')">.</button>
+            <button class="btn btn-operator" onclick="getResult()">=</button>
         </div>
     </div>
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>
