@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
-    <link rel="stylesheet" href="index.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
   </head>
   <body>
     <div class="calculator">
@@ -13,26 +13,26 @@
         <div id="result"></div>
       </div>
       <div class="buttonarea">
-            <button class="btn" onclick="removeLastCharacter()">&lt</button>
-            <button class="btn btn-bigsize" onclick="clearAll()">AC</button>
-            <button class="btn btn-operator" onclick="getuserExpression('÷')">÷</button>
-            <button class="btn" onclick="getuserExpression('7')">7</button>
-            <button class="btn" onclick="getuserExpression('8')">8</button>
-            <button class="btn" onclick="getuserExpression('9')">9</button>
-            <button class="btn btn-operator" onclick="getuserExpression('×')">×</button>
-            <button class="btn" onclick="getuserExpression('4')">4</button>
-            <button class="btn" onclick="getuserExpression('5')">5</button>
-            <button class="btn" onclick="getuserExpression('6')">6</button>
-            <button class="btn btn-operator" onclick="getuserExpression('-')">-</button>
-            <button class="btn" onclick="getuserExpression('1')">1</button>
-            <button class="btn" onclick="getuserExpression('2')">2</button>
-            <button class="btn" onclick="getuserExpression('3')">3</button>
-            <button class="btn btn-operator" onclick="getuserExpression('+')">+</button>
-            <button class="btn" onclick="getuserExpression('0')">0</button>
-            <button class="btn btn-bigsize" onclick="getuserExpression('.')">.</button>
-            <button class="btn btn-operator" onclick="calculateResult()">=</button>
+            <button class="btn">&lt</button>
+            <button class="btn btn-bigsize">AC</button>
+            <button class="btn btn-operator">÷</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn btn-operator">×</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn btn-operator">-</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn btn-operator">+</button>
+            <button class="btn">0</button>
+            <button class="btn btn-bigsize">.</button>
+            <button class="btn btn-operator">=</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
