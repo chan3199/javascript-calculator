@@ -2,7 +2,7 @@ import { isOperator, isOperatorsEmpty, isHigherPriority } from "./utils.js";
 import { operationalCalculate } from "./operator.js";
 import { userExpression } from "../index.js";
 
-function calculateResult() {
+export function calculateResult() {
   const lastCharacter = userExpression.slice(-1);
   if (isOperator(lastCharacter)) {
     return alert("수식이 완성되지 않았습니다.");
@@ -24,7 +24,7 @@ function convertExpression(inputArray) {
     .split(/([+\-*/])/);
 }
 
-function getResult(expressionArray) {
+export function getResult(expressionArray) {
   const postFixArray = convertToPostfix(expressionArray);
   return calculatePostfix(postFixArray);
 }
@@ -72,5 +72,3 @@ function calculatePostfix(input) {
   let result = operandStack[0];
   return result.toString();
 }
-
-export { calculateResult, getResult };
