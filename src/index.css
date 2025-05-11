@@ -42,11 +42,8 @@
   background-color: #e89650;
   color: white;
 }
-#all-clear-btn {
+
+.btn-bigsize {
   grid-column-start: 2;
   grid-column-end: 4;
-}
-#zero-btn {
-  grid-column-start: 1;
-  grid-column-end: 3;
 }

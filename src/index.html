@@ -13,24 +13,24 @@
         <div id="result"></div>
       </div>
       <div class="buttonarea">
-            <button class="btn" onclick="eraseNumber()">&lt</button>
-            <button id ="all-clear-btn" class="btn" onclick="allClear()">AC</button>
-            <button class="btn btn-operator" onclick="getUserInput('÷')">÷</button>
-            <button class="btn" onclick="getUserInput('7')">7</button>
-            <button class="btn" onclick="getUserInput('8')">8</button>
-            <button class="btn" onclick="getUserInput('9')">9</button>
-            <button class="btn btn-operator" onclick="getUserInput('×')">×</button>
-            <button class="btn" onclick="getUserInput('4')">4</button>
-            <button class="btn" onclick="getUserInput('5')">5</button>
-            <button class="btn" onclick="getUserInput('6')">6</button>
-            <button class="btn btn-operator" onclick="getUserInput('-')">-</button>
-            <button class="btn" onclick="getUserInput('1')">1</button>
-            <button class="btn" onclick="getUserInput('2')">2</button>
-            <button class="btn" onclick="getUserInput('3')">3</button>
-            <button class="btn btn-operator" onclick="getUserInput('+')">+</button>
-            <button id = "zero-btn" class="btn" onclick="getUserInput('0')">0</button>
-            <button class="btn" onclick="getUserInput('.')">.</button>
-            <button class="btn btn-operator" onclick="getResult()">=</button>
+            <button class="btn" onclick="removeLastCharacter()">&lt</button>
+            <button class="btn btn-bigsize" onclick="clearAll()">AC</button>
+            <button class="btn btn-operator" onclick="getuserExpression('÷')">÷</button>
+            <button class="btn" onclick="getuserExpression('7')">7</button>
+            <button class="btn" onclick="getuserExpression('8')">8</button>
+            <button class="btn" onclick="getuserExpression('9')">9</button>
+            <button class="btn btn-operator" onclick="getuserExpression('×')">×</button>
+            <button class="btn" onclick="getuserExpression('4')">4</button>
+            <button class="btn" onclick="getuserExpression('5')">5</button>
+            <button class="btn" onclick="getuserExpression('6')">6</button>
+            <button class="btn btn-operator" onclick="getuserExpression('-')">-</button>
+            <button class="btn" onclick="getuserExpression('1')">1</button>
+            <button class="btn" onclick="getuserExpression('2')">2</button>
+            <button class="btn" onclick="getuserExpression('3')">3</button>
+            <button class="btn btn-operator" onclick="getuserExpression('+')">+</button>
+            <button class="btn" onclick="getuserExpression('0')">0</button>
+            <button class="btn btn-bigsize" onclick="getuserExpression('.')">.</button>
+            <button class="btn btn-operator" onclick="calculateResult()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
